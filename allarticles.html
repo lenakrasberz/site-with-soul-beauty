@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiteWithSoul Premium Beauty Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      We don't build websites for everyone — we build websites for you.
+    </div>
+
+    <header>
+      <a href="index.html" class="logo">
+        SiteWithSoul
+        <!-- Эстетичная веточка -->
+        <svg viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.5,31 C11.5,31 9,18 2,12 C9,14 11.5,21 11.5,21 C11.5,21 14,10 22,2 C15,5 12.5,14 12.5,14 C12.5,14 17,14 20,11 C16,13 13,16 13,16"
+            stroke="var(--accent)"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"
+          />
+        </svg>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li class="has-dropdown">
+          <a href="index.html#services" class="dropdown-toggle">
+            Services
+            <!-- Иконка стрелочки -->
+            <svg viewBox="0 0 24 24" width="14" height="14">
+              <path
+                d="M6 9l6 6 6-6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+          </a>
+          <!-- Само выпадающее меню -->
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown__link" href="salons.html"
+                >Beauty Salon Websites</a
+              >
+            </li>
+            <li><a class="dropdown__link" href="spa.html">Spa Websites</a></li>
+            <li>
+              <a class="dropdown__link" href="clinics.html"
+                >Aesthetic Clinic Websites</a
+              >
+            </li>
+            <li>
+              <a class="dropdown__link" href="yoga.html"
+                >Yoga Studio Websites</a
+              >
+            </li>
+            <li>
+              <a class="dropdown__link" href="wellness.html"
+                >Wellness Studio Websites</a
+              >
+            </li>
+            <li>
+              <a class="dropdown__link" href="partnership.html">Partnership</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="index.html#contacts">Contacts</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <div class="lang-switch">
+          <a href="#" class="active">EN</a> | <a href="#">UK</a>
+        </div>
+        <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Оверлей для затемнения -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Боковое мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <div class="logo">
+          SiteWithSoul
+          <svg viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.5,31 C11.5,31 9,18 2,12 C9,14 11.5,21 11.5,21 C11.5,21 14,10 22,2 C15,5 12.5,14 12.5,14 C12.5,14 17,14 20,11 C16,13 13,16 13,16"
+              stroke="var(--accent)"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <button class="close-menu" id="closeMenu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-links">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <!-- Мобильный Dropdown -->
+        <li class="mobile-has-dropdown">
+          <button class="mobile-dropdown-toggle" id="mobileDropdownBtn">
+            Services
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path
+                d="M6 9l6 6 6-6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+          </button>
+          <ul class="mobile-dropdown-menu" id="mobileDropdownMenu">
+            <li>
+              <a href="salons.html" class="mobile-link"
+                >Beauty Salon Websites</a
+              >
+            </li>
+            <li><a href="spa.html" class="mobile-link">Spa Websites</a></li>
+            <li>
+              <a href="clinics.html" class="mobile-link"
+                >Aesthetic Clinic Websites</a
+              >
+            </li>
+            <li>
+              <a href="yoga.html" class="mobile-link">Yoga Studio Websites</a>
+            </li>
+            <li>
+              <a href="wellness.html" class="mobile-link"
+                >Wellness Studio Websites</a
+              >
+            </li>
+            <li>
+              <a href="partnership.html" class="mobile-link">Partnership</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="index.html#pricing">Pricing</a></li>
+        <li><a href="index.html#blog">Blog</a></li>
+        <li><a href="index.html#contacts">Contacts</a></li>
+      </ul>
+      <div class="mobile-lang-switch">
+        <a href="#" class="active">EN</a>
+        <span class="divider">|</span>
+        <a href="#">UK</a>
+      </div>
+      <div class="mobile-menu-footer">
+        <!-- Используем те же классы, что и у кнопок на главном экране -->
+        <button class="btn btn-primary open-modal-btn" id="mobileStartProject">
+          Start Your Project
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M5 12h14M12 5l7 7-7 7"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <main class="archive-page">
+      <div class="container">
+        <!-- Центрированная шапка страницы -->
+        <div class="archive-header">
+          <h1 class="archive-title">Journal & Trends</h1>
+          <p class="archive-subtitle">
+            Expert advice, beauty secrets, and the latest trends from our top
+            masters.
+          </p>
+        </div>
+
+        <!-- Сетка статей (Добавляем класс centered-cards для выравнивания) -->
+        <div class="blog-grid centered-cards">
+          <!-- Статья 1 -->
+          <article class="blog-card">
+            <a href="single.html" class="blog-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop"
+                alt="Hair care"
+              />
+            </a>
+            <div class="blog-content">
+              <span class="blog-date">August 10, 2026</span>
+              <h3 class="blog-title">
+                <a href="single.html"
+                  >How to Protect Your Hair and Skin in a Tropical Climate</a
+                >
+              </h3>
+              <p class="blog-excerpt">
+                Discover our top professional tips for maintaining glowing skin
+                and healthy hair despite high humidity and sun exposure.
+              </p>
+              <a href="single.html" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Статья 2 -->
+          <article class="blog-card">
+            <a href="single.html" class="blog-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop"
+                alt="Spa rituals"
+              />
+            </a>
+            <div class="blog-content">
+              <span class="blog-date">August 02, 2026</span>
+              <h3 class="blog-title">
+                <a href="single.html"
+                  >The Ultimate Guide to Premium Spa Rituals</a
+                >
+              </h3>
+              <p class="blog-excerpt">
+                Take a deep dive into the relaxing world of our signature spa
+                treatments designed to restore both your body and mind.
+              </p>
+              <a href="single.html" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Статья 3 -->
+          <article class="blog-card">
+            <a href="single.html" class="blog-image-wrapper">
+              <img
+                src="https://img.magnific.com/free-photo/woman-wore-pink-makeup-beautifully-decorated-flowers-isolated-white_1150-52235.jpg?semt=ais_hybrid&w=740&q=80"
+                alt="Minimalist manicure"
+              />
+            </a>
+            <div class="blog-content">
+              <span class="blog-date">July 28, 2026</span>
+              <h3 class="blog-title">
+                <a href="single.html"
+                  >Minimalist Manicure: The Biggest Trend of the Year</a
+                >
+              </h3>
+              <p class="blog-excerpt">
+                Why less is more. Explore the elegant, clean aesthetics of the
+                minimalist manicure that top influencers are choosing right now.
+              </p>
+              <a href="single.html" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Статья 4 -->
+          <article class="blog-card is-hidden">
+            <a href="single.html" class="blog-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?q=80&w=800&auto=format&fit=crop"
+                alt="Skincare"
+              />
+            </a>
+            <div class="blog-content">
+              <span class="blog-date">July 15, 2026</span>
+              <h3 class="blog-title">
+                <a href="single.html"
+                  >5 Essential Steps for a Morning Skincare Routine</a
+                >
+              </h3>
+              <p class="blog-excerpt">
+                Start your day right with these simple, effective steps to keep
+                your skin hydrated, protected, and glowing all day long.
+              </p>
+              <a href="single.html" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Статья 5 -->
+          <article class="blog-card is-hidden">
+            <a href="single.html" class="blog-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?q=80&w=800&auto=format&fit=crop"
+                alt="Massage therapy"
+              />
+            </a>
+            <div class="blog-content">
+              <span class="blog-date">July 05, 2026</span>
+              <h3 class="blog-title">
+                <a href="single.html"
+                  >The Benefits of Hot Stone Massage Therapy</a
+                >
+              </h3>
+              <p class="blog-excerpt">
+                Learn how heated stones can melt away tension, ease muscle
+                stiffness, and increase circulation and metabolism.
+              </p>
+              <a href="single.html" class="read-more">Read More</a>
+            </div>
+          </article>
+
+          <!-- Статья 6 -->
+          <article class="blog-card is-hidden">
+            <a href="single.html" class="blog-image-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=800&auto=format&fit=crop"
+                alt="Wellness trends"
+              />
+            </a>
+            <div class="blog-content">
+              <span class="blog-date">June 20, 2026</span>
+              <h3 class="blog-title">
+                <a href="single.html"
+                  >Top 3 Wellness Trends Taking Over in 2026</a
+                >
+              </h3>
+              <p class="blog-excerpt">
+                From sound baths to digital detox retreats, discover what’s new
+                in the world of holistic health and self-care.
+              </p>
+              <a href="single.html" class="read-more">Read More</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Кнопка LOAD MORE -->
+        <div class="load-more-container">
+          <button class="btn-load-more">Load More</button>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal-overlay" id="userNameModal">
+        <div class="modal-content">
+          <button class="close-btn" id="closeModal">&times;</button>
+          <h3>Start Your Project</h3>
+          <form>
+            <div class="form-group">
+              <input type="text" placeholder="Your Name" required />
+            </div>
+            <div class="form-group">
+              <input type="tel" placeholder="WhatsApp Number" required />
+            </div>
+            <div class="form-group">
+              <select required>
+                <option value="" disabled selected>Select Business Type</option>
+                <option value="salon">Beauty Salon</option>
+                <option value="spa">Spa / Wellness Studio</option>
+                <option value="clinic">Aesthetic Clinic</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary submit-btn">
+              Send Request
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M5 12h14M12 5l7 7-7 7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+      <!-- Вертикальный блок социальных сетей -->
+      <div class="floating-socials">
+        <a
+          href="https://www.instagram.com/berzina_web_dev/"
+          aria-label="Instagram"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </a>
+        <a href="https://t.me/sitewithsoul" aria-label="Telegram">
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <line x1="22" y1="2" x2="11" y2="13"></line>
+            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+          </svg>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/olena-berzina-284233257/"
+          aria-label="LinkedIn"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path
+              d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+            ></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Плавающая кнопка WhatsApp -->
+      <a
+        href="https://wa.me/https://wa.me/+380661207056"
+        class="floating-whatsapp"
+        target="_blank"
+        aria-label="Chat on WhatsApp"
+      >
+        <!-- Сюда вставишь путь к своей картинке WhatsApp -->
+        <img src="assets/img/whatsapp-svgrepo-com.svg" alt="WhatsApp" />
+      </a>
+    </main>
+    <!-- =========================================
+         СЕКЦИЯ: FOOTER (ПОДВАЛ САЙТА)
+         ========================================= -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <!-- Колонка 1: Бренд и Соцсети -->
+        <div class="footer-col brand-col">
+          <!-- Твой логотип (текстом или картинкой) -->
+          <a href="index.html" class="footer-logo">SiteWithSoul</a>
+          <p class="footer-desc">
+            Premium websites for beauty & wellness businesses worldwide
+          </p>
+
+          <!-- Соцсети -->
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/berzina_web_dev/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/olena-berzina-284233257/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a
+              href="https://t.me/sitewithsoul"
+              target="_blank"
+              aria-label="Telegram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/+380661207056"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="viber://chat?number=+380661207056"
+              target="_blank"
+              aria-label="Viber"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+                <path d="M15 7a4 4 0 0 1 4 4"></path>
+                <path d="M15 3a8 8 0 0 1 8 8"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Колонка 2: Экспертиза (Страницы) -->
+        <div class="footer-col links-col">
+          <h4 class="footer-heading">What We Create</h4>
+          <ul class="footer-menu">
+            <li><a href="index.html#portfolio">One-Page Websites</a></li>
+            <li><a href="index.html#portfolio">Multi-Page Websites</a></li>
+            <li>
+              <a href="index.html#portfolio">Booking & Business Websites</a>
+            </li>
+            <li>
+              <a href="index.html#portfolio">Website Support & Maintenance</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Колонка 3: НОВЫЙ БЛОК (Ниши) -->
+        <div class="footer-col links-col">
+          <h4 class="footer-heading">Websites For</h4>
+          <ul class="footer-menu">
+            <li><a href="salons.html">Beauty Salons</a></li>
+            <li><a href="spa.html">Spas</a></li>
+            <li><a href="clinics.html">Aesthetic Clinics</a></li>
+            <li><a href="yoga.html">Yoga Studios</a></li>
+            <li><a href="wellness.html">Wellness Studios</a></li>
+            <li><a href="index.html#contacts">Beauty Professionals</a></li>
+            <li><a href="partnership.html">Partnership</a></li>
+          </ul>
+        </div>
+
+        <!-- Колонка 3: Контакты и Оплата -->
+        <div class="footer-col contact-col">
+          <h4 class="footer-heading">Let's Connect</h4>
+
+          <a href="mailto:sitewithsoul@gmail.com" class="footer-contact-link">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            sitewithsoul@gmail.com
+          </a>
+
+          <a
+            href="https://wa.me/380661207056"
+            target="_blank"
+            class="footer-contact-link"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+            +38 066 120 70 56
+            <span class="contact-note">(WhatsApp / Telegram)</span>
+          </a>
+
+          <div class="payment-methods">
+            <span class="payment-label">Global Payments Accepted:</span>
+            <div class="payment-icons">
+              <!-- Здесь можно вставить SVG логотипа Payoneer, пока пишем текстом для стиля -->
+              <span class="pay-badge">Payoneer</span>
+              <span class="pay-badge">SWIFT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Самая нижняя полоса: Копирайт и Документы -->
+      <div class="footer-bottom">
+        <div class="container bottom-container">
+          <p class="copyright">
+            © <span id="currentYear">2026</span> SiteWithSoul Studio
+          </p>
+          <div class="legal-links">
+            <a href="offer.html">Public Offer Contract</a>
+            <a href="policy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,2598 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SiteWithSoul Premium Beauty Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/normalize.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="top-bar">
+      We don't build websites for everyone — we build websites for you.
+    </div>
+
+    <header>
+      <div class="logo">
+        SiteWithSoul
+        <!-- Эстетичная веточка -->
+        <svg viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11.5,31 C11.5,31 9,18 2,12 C9,14 11.5,21 11.5,21 C11.5,21 14,10 22,2 C15,5 12.5,14 12.5,14 C12.5,14 17,14 20,11 C16,13 13,16 13,16"
+            stroke="var(--accent)"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li class="has-dropdown">
+          <a href="#services" class="dropdown-toggle">
+            Services
+            <!-- Иконка стрелочки -->
+            <svg viewBox="0 0 24 24" width="14" height="14">
+              <path
+                d="M6 9l6 6 6-6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+          </a>
+          <!-- Само выпадающее меню -->
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown__link" href="salons.html"
+                >Beauty Salon Websites</a
+              >
+            </li>
+            <li><a class="dropdown__link" href="spa.html">Spa Websites</a></li>
+            <li>
+              <a class="dropdown__link" href="clinics.html"
+                >Aesthetic Clinic Websites</a
+              >
+            </li>
+            <li>
+              <a class="dropdown__link" href="yoga.html"
+                >Yoga Studio Websites</a
+              >
+            </li>
+            <li>
+              <a class="dropdown__link" href="wellness.html"
+                >Wellness Studio Websites</a
+              >
+            </li>
+            <li>
+              <a class="dropdown__link" href="partnership.html">Partnership</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+
+      <div class="header-actions">
+        <div class="lang-switch">
+          <a href="#" class="active">EN</a> | <a href="#">UK</a>
+        </div>
+        <div class="burger" id="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+      </div>
+    </header>
+    <!-- Оверлей для затемнения -->
+    <div class="menu-overlay" id="menuOverlay"></div>
+
+    <!-- Боковое мобильное меню -->
+    <div class="mobile-menu" id="mobileMenu">
+      <div class="mobile-menu-header">
+        <div class="logo">
+          SiteWithSoul
+          <svg viewBox="0 0 24 32" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11.5,31 C11.5,31 9,18 2,12 C9,14 11.5,21 11.5,21 C11.5,21 14,10 22,2 C15,5 12.5,14 12.5,14 C12.5,14 17,14 20,11 C16,13 13,16 13,16"
+              stroke="var(--accent)"
+              stroke-width="1.5"
+              fill="none"
+              stroke-linecap="round"
+            />
+          </svg>
+        </div>
+        <button class="close-menu" id="closeMenu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-links">
+        <li><a href="index.html" class="mobile-link">Home</a></li>
+        <li><a href="#about" class="mobile-link">About</a></li>
+        <!-- Мобильный Dropdown -->
+        <li class="mobile-has-dropdown">
+          <a
+            href="#services"
+            class="mobile-dropdown-toggle"
+            id="mobileDropdownBtn"
+          >
+            Services
+            <svg viewBox="0 0 24 24" width="20" height="20">
+              <path
+                d="M6 9l6 6 6-6"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+          </a>
+          <ul class="mobile-dropdown-menu" id="mobileDropdownMenu">
+            <li>
+              <a href="salons.html" class="mobile-link"
+                >Beauty Salon Websites</a
+              >
+            </li>
+            <li><a href="spa.html" class="mobile-link">Spa Websites</a></li>
+            <li>
+              <a href="clinics.html" class="mobile-link"
+                >Aesthetic Clinic Websites</a
+              >
+            </li>
+            <li>
+              <a href="yoga.html" class="mobile-link">Yoga Studio Websites</a>
+            </li>
+            <li>
+              <a href="wellness.html" class="mobile-link"
+                >Wellness Studio Websites</a
+              >
+            </li>
+            <li>
+              <a href="partnership.html" class="mobile-link">Partnership</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#pricing" class="mobile-link">Pricing</a></li>
+        <li><a href="#blog" class="mobile-link">Blog</a></li>
+        <li><a href="#contacts" class="mobile-link">Contacts</a></li>
+      </ul>
+      <div class="mobile-lang-switch">
+        <a href="#" class="active">EN</a>
+        <span class="divider">|</span>
+        <a href="#">UK</a>
+      </div>
+      <div class="mobile-menu-footer">
+        <!-- Используем те же классы, что и у кнопок на главном экране -->
+        <button class="btn btn-primary" id="mobileStartProject">
+          Start Your Project
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M5 12h14M12 5l7 7-7 7"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              fill="none"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <main class="main">
+      <section class="hero">
+        <div class="hero-content">
+          <h1>Premium websites for beauty businesses and wellness</h1>
+          <h2>
+            Websites for beauty salons, spas, wellness studios, aesthetic and
+            beauty clinics — designed to turn visitors into bookings
+          </h2>
+
+          <div class="hero-buttons">
+            <a href="#portfolio" class="btn btn-secondary">
+              View Our Work
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M5 12h14M12 5l7 7-7 7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </a>
+            <button class="btn btn-primary" id="openModal">
+              Start Your Project
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M5 12h14M12 5l7 7-7 7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
+          </div>
+
+          <div class="features">
+            <div class="feature-item">
+              <!-- Иконка поиска/лупы с листиком -->
+              <svg viewBox="0 0 24 24">
+                <circle
+                  cx="11"
+                  cy="11"
+                  r="8"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <path
+                  d="M16.5 16.5L22 22"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M11 7C9 7 7.5 8.5 7.5 10.5"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Be found
+            </div>
+            <div class="feature-item">
+              <!-- Иконка щита/доверия -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <path
+                  d="M9 12l2 2 4-4"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              Build trust
+            </div>
+            <div class="feature-item">
+              <!-- Иконка календаря/букинга -->
+              <svg viewBox="0 0 24 24">
+                <rect
+                  x="3"
+                  y="4"
+                  width="18"
+                  height="18"
+                  rx="2"
+                  ry="2"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  fill="none"
+                />
+                <path
+                  d="M16 2v4M8 2v4M3 10h18"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+              Get more bookings
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image-wrapper">
+          <div class="blob-container">
+            <!-- Ссылки на 3 вертикальные/квадратные фотографии -->
+            <img
+              src="assets/img/bg-main-1.avif"
+              alt="Spa aesthetic 1"
+              class="blob-img img-1"
+            />
+            <img
+              src="assets/img/bg-main-2.avif"
+              alt="Spa aesthetic 2"
+              class="blob-img img-2"
+            />
+            <img
+              src="assets/img/bg-main-3.avif"
+              alt="Spa aesthetic 3"
+              class="blob-img img-3"
+            />
+          </div>
+        </div>
+
+        <div class="hero-bottom-text">
+          <em>Look as professional online as you do in real life</em>
+        </div>
+      </section>
+      <!-- Секция: Трансформация (The Shift) -->
+      <section class="shift-section">
+        <!-- Фоновая декоративная веточка -->
+        <svg
+          class="decorative-branch"
+          viewBox="0 0 250 350"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <!-- Шаблон объемного листа -->
+            <g id="rich-leaf">
+              <!-- Темная (нижняя) часть листа -->
+              <path
+                d="M 0,0 C 20,25 60,20 80,0 C 60,20 20,25 0,0 Z"
+                fill="#9CAE88"
+              />
+              <!-- Светлая (верхняя) часть листа -->
+              <path
+                d="M 0,0 C 20,-25 60,-20 80,0 C 50,-2 25,0 0,0 Z"
+                fill="#B8C8A6"
+              />
+              <!-- Центральная прожилка -->
+              <path
+                d="M 0,0 Q 40,-2 78,0"
+                stroke="#778A64"
+                stroke-width="1.5"
+                fill="none"
+              />
+            </g>
+          </defs>
+
+          <!-- Опционально: мягкое фоновое пятно, как на референсе, для глубины -->
+          <path
+            d="M 10,120 Q 150,30 220,180 Q 120,320 20,260 Z"
+            fill="#F0EBE1"
+            opacity="0.6"
+          />
+
+          <!-- Изогнутый главный стебель -->
+          <path
+            d="M -20,350 Q 80,200 200,20"
+            stroke="#778A64"
+            stroke-width="2.5"
+            fill="none"
+            stroke-linecap="round"
+          />
+
+          <!-- Рассадка листьев по стеблю -->
+          <!-- Нижние -->
+          <use
+            href="#rich-leaf"
+            transform="translate(10, 280) rotate(-65) scale(0.95)"
+          />
+          <use
+            href="#rich-leaf"
+            transform="translate(45, 305) rotate(15) scale(1.05)"
+          />
+
+          <!-- Средние нижние -->
+          <use
+            href="#rich-leaf"
+            transform="translate(50, 200) rotate(-55) scale(0.95)"
+          />
+          <use
+            href="#rich-leaf"
+            transform="translate(75, 225) rotate(5) scale(0.9)"
+          />
+
+          <!-- Средние верхние -->
+          <use
+            href="#rich-leaf"
+            transform="translate(100, 125) rotate(-45) scale(0.85)"
+          />
+          <use
+            href="#rich-leaf"
+            transform="translate(125, 145) rotate(-5) scale(0.8)"
+          />
+
+          <!-- Верхушка -->
+          <use
+            href="#rich-leaf"
+            transform="translate(155, 65) rotate(-35) scale(0.75)"
+          />
+          <use
+            href="#rich-leaf"
+            transform="translate(195, 25) rotate(-45) scale(0.7)"
+          />
+        </svg>
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Turn Followers into Clients</span>
+            <h2 class="section-title">Instagram is Not Enough</h2>
+            <p class="section-desc">
+              Instagram gets people interested. Your website helps them choose
+              you. Give your clients one place to see your services, prices,
+              work and reviews — and book when they're ready
+            </p>
+          </div>
+
+          <div class="comparison-grid">
+            <!-- Карточка 1: Боль (Social Media) -->
+            <div class="compare-card card-social">
+              <div class="card-header">
+                <h3>Social Media Profile</h3>
+                <span class="card-tag">Discovery</span>
+              </div>
+              <ul class="compare-list">
+                <li>
+                  <svg viewBox="0 0 24 24" class="icon-cross">
+                    <path
+                      d="M18 6L6 18M6 6l12 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  Competitors are just one scroll away
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" class="icon-cross">
+                    <path
+                      d="M18 6L6 18M6 6l12 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  Answering DMs manually to book appointments
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" class="icon-cross">
+                    <path
+                      d="M18 6L6 18M6 6l12 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  Invisible to people searching on Google
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" class="icon-cross">
+                    <path
+                      d="M18 6L6 18M6 6l12 12"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  You don't own the platform or the rules
+                </li>
+              </ul>
+            </div>
+
+            <!-- Карточка 2: Решение (Premium Website) -->
+            <div class="compare-card card-website">
+              <div class="card-header">
+                <h3>Premium Website</h3>
+                <span class="card-tag highlight">Authority & Sales</span>
+              </div>
+              <ul class="compare-list">
+                <li>
+                  <svg viewBox="0 0 24 24" class="icon-check">
+                    <path
+                      d="M20 6L9 17l-5-5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  100% your brand, trust and status
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" class="icon-check">
+                    <path
+                      d="M20 6L9 17l-5-5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Automated booking system works 24/7
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" class="icon-check">
+                    <path
+                      d="M20 6L9 17l-5-5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Dominate local SEO and Google searches
+                </li>
+                <li>
+                  <svg viewBox="0 0 24 24" class="icon-check">
+                    <path
+                      d="M20 6L9 17l-5-5"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  Sell gift cards, memberships, and beauty products online
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Секция: Портфолио -->
+      <section id="portfolio" class="portfolio-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Our Works</span>
+            <h2 class="section-title">Selected Projects</h2>
+            <p class="section-desc">
+              Explore our latest digital solutions crafted specifically for
+              premium beauty and wellness brands
+            </p>
+          </div>
+
+          <div class="portfolio-grid">
+            <!-- Проект 1: Spa & Wellness (Картинка слева) -->
+            <div class="project-card">
+              <div class="project-visual">
+                <!-- Сюда вставишь красивый мокап (скриншот сайта в макбуке) -->
+                <img
+                  src="assets/img/spa-2.webp"
+                  alt="Premium Spa Website Design"
+                  class="screen-img"
+                />
+                <img
+                  src="assets/img/device.webp"
+                  class="mockup-frame"
+                  alt="Macbook frame"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Spa & Wellness</span>
+                <h3 class="project-title">Thai Zen Wellness</h3>
+                <p class="project-desc">
+                  A calm and relaxing website that gives visitors a feel for the
+                  experience before they even walk through the door. It includes
+                  gift certificate sales and a solid SEO-ready structure to help
+                  people find the business online
+                </p>
+                <div class="project-tags">
+                  <span>UI/UX Design</span>
+                  <span>Web Development</span>
+                  <span>Booking Integration</span>
+                </div>
+                <a
+                  href="https://твой-проект-spa.vercel.app"
+                  target="_blank"
+                  class="btn btn-secondary live-demo-btn"
+                >
+                  See Live Demo
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Проект 2: Dental Clinic (Картинка справа - класс reverse) -->
+            <div class="project-card reverse">
+              <div class="project-visual">
+                <img
+                  src="assets/img/dental.webp"
+                  class="screen-img"
+                  alt="Dental Clinic Website Design"
+                />
+                <img
+                  src="assets/img/device.webp"
+                  class="mockup-frame"
+                  alt="Macbook frame"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Aesthetic Dentistry</span>
+                <h3 class="project-title">Smile Bright Clinic</h3>
+                <p class="project-desc">
+                  A clean and trustworthy website for a premium dental clinic.
+                  Designed to help patients explore treatments, learn more about
+                  the clinic and easily book an appointment.
+                </p>
+                <div class="project-tags">
+                  <span>Corporate Identity</span>
+                  <span>Lead Generation</span>
+                  <span>Responsive Design</span>
+                </div>
+                <a
+                  href="https://dental-clinic-html.vercel.app/"
+                  target="_blank"
+                  class="btn btn-secondary live-demo-btn"
+                >
+                  See Live Demo
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Проект 3: Yoga Studio (Картинка слева) -->
+            <div class="project-card">
+              <div class="project-visual">
+                <img
+                  src="assets/img/yoga.webp"
+                  class="screen-img"
+                  alt="Yoga Studio Website Design"
+                />
+                <img
+                  src="assets/img/device.webp"
+                  class="mockup-frame"
+                  alt="Macbook frame"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Yoga & Mindfulness</span>
+                <h3 class="project-title">Yoga Studio BKK Oasis</h3>
+                <p class="project-desc">
+                  A modern website for a yoga studio with three membership plans
+                  and a dedicated careers page where the studio can post current
+                  job openings.
+                </p>
+                <div class="project-tags">
+                  <span>Membership Plans</span>
+                  <span>Careers Page</span>
+                  <span>Class Schedule</span>
+                </div>
+                <a
+                  href="https://yoga-studio-html.vercel.app/"
+                  target="_blank"
+                  class="btn btn-secondary live-demo-btn"
+                >
+                  See Live Demo
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Проект 4: Beauty Studio (Скрытый по умолчанию, Картинка справа) -->
+            <div class="project-card reverse hidden-project">
+              <div class="project-visual">
+                <img
+                  src="assets/img/beauty.webp"
+                  class="screen-img"
+                  alt="Beauty Studio Website Design"
+                />
+                <img
+                  src="assets/img/device.webp"
+                  class="mockup-frame"
+                  alt="Macbook frame"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Beauty & Aesthetics</span>
+                <h3 class="project-title">Beauty Studio</h3>
+                <p class="project-desc">
+                  A premium website design for a modern beauty studio. It
+                  highlights the salon's best work through an interactive
+                  gallery and makes booking an appointment completely
+                  effortless.
+                </p>
+                <div class="project-tags">
+                  <span>Web Design</span>
+                  <span>Interactive Gallery</span>
+                  <span>Complete booking form</span>
+                </div>
+                <a
+                  href="https://test.site-with-soul.com/"
+                  target="_blank"
+                  class="btn btn-secondary live-demo-btn"
+                >
+                  See Live Demo
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Проект 5: Law Firm (Скрытый по умолчанию, Картинка слева) -->
+            <div class="project-card hidden-project">
+              <div class="project-visual">
+                <img
+                  src="assets/img/law.webp"
+                  class="screen-img"
+                  alt="Law Firm Website Design"
+                />
+                <img
+                  src="assets/img/device.webp"
+                  class="mockup-frame"
+                  alt="Macbook frame"
+                />
+              </div>
+              <div class="project-content">
+                <span class="project-category">Corporate / Legal</span>
+                <h3 class="project-title">Website for a law firm</h3>
+                <p class="project-desc">
+                  A high-end corporate website with a strict, premium design. It
+                  features a complex custom layout and a booking form to
+                  schedule legal consultations easily.
+                </p>
+                <div class="project-tags">
+                  <span>Premium Design</span>
+                  <span>Advanced Layout</span>
+                  <span>Booking System</span>
+                </div>
+                <a
+                  href="https://advocate-website-murex.vercel.app/"
+                  target="_blank"
+                  class="btn btn-secondary live-demo-btn"
+                >
+                  See Live Demo
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <!-- Конец .portfolio-grid -->
+          </div>
+          <!-- Кнопка "See More / See Less" -->
+          <div class="portfolio-action">
+            <button class="btn btn-secondary" id="loadMoreBtn">
+              <span id="btnText">See More Projects</span>
+              <!-- Иконка стрелочки -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 9l-7 7-7-7"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Секция: Expertise & Features -->
+      <section class="features-section">
+        <!-- НОВАЯ ВЕТОЧКА (Справа снизу) -->
+        <svg
+          class="features-branch"
+          viewBox="0 0 400 500"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <!-- Шаблон острого элегантного листа -->
+            <g id="sharp-leaf">
+              <!-- Светлая верхняя часть -->
+              <path
+                d="M 0,0 C 30,-25 70,-15 100,0 C 70,-5 30,2 0,0 Z"
+                fill="#C5D3B5"
+              />
+              <!-- Темная нижняя часть -->
+              <path
+                d="M 0,0 C 30,25 70,15 100,0 C 70,5 30,-2 0,0 Z"
+                fill="#9CAE88"
+              />
+              <!-- Центральная прожилка -->
+              <path
+                d="M 0,0 Q 40,0 90,0"
+                stroke="#778A64"
+                stroke-width="1.2"
+                fill="none"
+              />
+            </g>
+          </defs>
+
+          <!-- Абстрактные фоновые пятна (как на референсе) -->
+          <path
+            d="M 300,550 C 150,450 50,250 200,100 C 350,-50 500,50 450,250 C 400,450 500,550 300,550 Z"
+            fill="#F5F3EA"
+            opacity="0.9"
+          />
+          <path
+            d="M 450,450 C 250,450 200,300 350,200 C 500,100 550,250 450,450 Z"
+            fill="#EAE5D9"
+            opacity="0.6"
+          />
+
+          <!-- Основной стебель (растет из правого нижнего угла влево-вверх) -->
+          <path
+            d="M 380,500 Q 250,300 100,120"
+            stroke="#778A64"
+            stroke-width="2"
+            fill="none"
+            stroke-linecap="round"
+          />
+
+          <!-- Рассадка листьев -->
+          <!-- Нижние -->
+          <use
+            href="#sharp-leaf"
+            transform="translate(320, 400) rotate(-165) scale(1.1)"
+          />
+          <use
+            href="#sharp-leaf"
+            transform="translate(330, 420) rotate(-65) scale(1.15)"
+          />
+
+          <!-- Средние -->
+          <use
+            href="#sharp-leaf"
+            transform="translate(230, 270) rotate(-155) scale(0.95)"
+          />
+          <use
+            href="#sharp-leaf"
+            transform="translate(250, 290) rotate(-55) scale(1)"
+          />
+
+          <!-- Верхние -->
+          <use
+            href="#sharp-leaf"
+            transform="translate(150, 175) rotate(-145) scale(0.8)"
+          />
+          <use
+            href="#sharp-leaf"
+            transform="translate(170, 185) rotate(-45) scale(0.85)"
+          />
+
+          <!-- Самый кончик -->
+          <use
+            href="#sharp-leaf"
+            transform="translate(100, 120) rotate(-135) scale(0.7)"
+          />
+        </svg>
+        <div class="container">
+          <div class="section-header">
+            <div class="anim-wrapper">
+              <span class="section-subtitle">The Standard</span>
+            </div>
+            <div class="anim-wrapper">
+              <h2 class="section-title">Your Digital Reception</h2>
+            </div>
+            <div class="anim-wrapper">
+              <p class="section-desc">
+                Your website should look beautiful and bring you money. We make
+                sure it does both
+              </p>
+            </div>
+          </div>
+
+          <div class="features-grid">
+            <!-- Карточка 1 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <h3>Premium Design</h3>
+              <p>
+                No cheap templates. We create unique websites that reflects your
+                brand and gives clients the right first impression
+              </p>
+            </div>
+
+            <!-- Карточка 2 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect
+                    x="3"
+                    y="4"
+                    width="18"
+                    height="18"
+                    rx="2"
+                    ry="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    fill="none"
+                  />
+                  <path
+                    d="M16 2v4M8 2v4M3 10h18M9 16l2 2 4-4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <h3>Easy Booking</h3>
+              <p>
+                Get bookings 24/7. Your clients can choose a service and make an
+                appointment without extra steps
+              </p>
+            </div>
+
+            <!-- Карточка 3 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                  <circle
+                    cx="12"
+                    cy="10"
+                    r="3"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <h3>Be Found Online</h3>
+              <p>
+                We set up the essentials so Google can understand your business
+                and help potential clients find your salon when they search for
+                your services
+              </p>
+            </div>
+
+            <!-- Карточка 4 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <rect
+                    x="5"
+                    y="2"
+                    width="14"
+                    height="20"
+                    rx="2"
+                    ry="2"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 18h.01"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <h3>Mobile Perfect</h3>
+              <p>
+                Your clients are often searching and booking from their phones.
+                Your website will look beautiful and work smoothly on every
+                screen
+              </p>
+            </div>
+
+            <!-- Карточка 5 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M2 20h20M5 20V14M12 20V8M19 20V4"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                  <path
+                    d="M3 16l6-6 4 4 8-8"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <h3>The Standard</h3>
+              <p>
+                We build marketing websites that guide your visitors from the
+                first impression to the booking
+              </p>
+            </div>
+
+            <!-- Карточка 6 -->
+            <div class="feature-card">
+              <div class="feature-icon">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    fill="none"
+                  />
+                </svg>
+              </div>
+              <h3>Zero Stress</h3>
+              <p>
+                You don't need to worry about the technical side. We take care
+                of the design, development and launch, so you can focus on your
+                business
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция: О нас / Founder -->
+      <section class="about-section" id="about">
+        <div class="container">
+          <div class="about-grid">
+            <!-- Левая колонка: Текст -->
+            <div class="about-content">
+              <span class="section-subtitle">About Us</span>
+              <h2 class="section-title">
+                Your business. Your style. Your website.
+              </h2>
+
+              <div class="about-text">
+                <p>
+                  <strong>SiteWithSoul</strong> is a web design and development
+                  studio creating premium websites for beauty and wellness
+                  businesses.
+                </p>
+                <p>
+                  We work with beauty salons, spas, wellness studios, aesthetic
+                  clinics and independent beauty professionals who want a
+                  website that feels as good as their brand.
+                </p>
+                <p>
+                  We keep the whole process simple. You tell us about your
+                  business, your clients and what you want to achieve. We take
+                  care of the rest — from the design and content structure to
+                  development and launch.
+                </p>
+                <p>
+                  Your website should make your business easier to find, easier
+                  to trust and easier to choose.
+                </p>
+                <p>
+                  From the first idea to the finished website, we handle
+                  everything for you.
+                </p>
+                <p>
+                  You bring the business. We’ll build the digital home for it.
+                </p>
+              </div>
+            </div>
+
+            <!-- Правая колонка: Интерактивное фото -->
+            <div class="about-visual">
+              <div class="founder-image-wrapper">
+                <!-- Основное фото (видимо по умолчанию) -->
+                <img
+                  src="assets/img/my_photo.webp"
+                  alt="Olena Berzina - Web Developer for Beauty Salons"
+                  class="img-main"
+                />
+
+                <!-- Второе фото (появляется при наведении) -->
+                <img
+                  src="assets/img/20250906_123223.avif"
+                  alt="Founder of SiteWithSoul Studio"
+                  class="img-hover"
+                />
+              </div>
+
+              <!-- Подпись под фото -->
+              <div class="founder-info">
+                <span class="founder-name">Olena Berzina</span>
+                <span class="founder-title"
+                  >Founder of SiteWithSoul Studio</span
+                >
+                <span class="founder-desc"
+                  >A female web developer who understands your business.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция: Процесс работы (How it Works) -->
+      <section class="process-section">
+        <!-- НОВАЯ ВЕТОЧКА (Слева снизу) -->
+        <svg
+          class="process-branch"
+          viewBox="0 0 250 300"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <!-- Шаблон листа -->
+            <g id="process-leaf">
+              <!-- Светлая половина -->
+              <path
+                d="M 0,0 C 25,-20 60,-10 85,0 C 60,-3 25,3 0,0 Z"
+                fill="#C5D3B5"
+              />
+              <!-- Темная половина -->
+              <path
+                d="M 0,0 C 25,20 60,10 85,0 C 60,3 25,-3 0,0 Z"
+                fill="#9CAE88"
+              />
+              <!-- Прожилка -->
+              <path
+                d="M 0,0 Q 35,0 75,0"
+                stroke="#778A64"
+                stroke-width="1"
+                fill="none"
+              />
+            </g>
+          </defs>
+
+          <!-- Акварельное фоновое пятно -->
+          <path
+            d="M -50,150 C 50,80 150,150 120,300 C -20,350 -100,250 -50,150 Z"
+            fill="#F5F3EA"
+            opacity="0.8"
+          />
+          <path
+            d="M -20,200 C 60,180 100,250 50,320 C -40,320 -60,250 -20,200 Z"
+            fill="#EAE5D9"
+            opacity="0.6"
+          />
+
+          <!-- Стебель (растет из левого нижнего угла вверх и вправо) -->
+          <path
+            d="M -10,310 Q 80,200 160,80"
+            stroke="#778A64"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"
+          />
+
+          <!-- Листья -->
+          <!-- Нижние -->
+          <use
+            href="#process-leaf"
+            transform="translate(40, 240) rotate(10) scale(0.95)"
+          />
+          <use
+            href="#process-leaf"
+            transform="translate(50, 230) rotate(-75) scale(0.9)"
+          />
+
+          <!-- Средние (как на картинке) -->
+          <use
+            href="#process-leaf"
+            transform="translate(100, 155) rotate(-5) scale(0.9)"
+          />
+          <use
+            href="#process-leaf"
+            transform="translate(110, 145) rotate(-85) scale(0.85)"
+          />
+
+          <!-- Самый верхний кончик -->
+          <use
+            href="#process-leaf"
+            transform="translate(160, 80) rotate(-50) scale(0.75)"
+          />
+        </svg>
+        <div class="container">
+          <div class="section-header">
+            <span class="section-subtitle">Seamless Process</span>
+            <h2 class="section-title">How We Work</h2>
+            <p class="section-desc">
+              A simple process from the first conversation to your new website.
+              We take care of everything, so you don't have to worry about the
+              technical side
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <!-- Шаг 1 -->
+            <div class="process-step">
+              <span class="step-number">01</span>
+              <div class="step-content">
+                <h3 class="step-title">Discovery Call</h3>
+                <p class="step-desc">
+                  We start with a friendly chat on WhatsApp. We learn about your
+                  services, your clients, your goals and the style you want for
+                  your beauty or wellness business
+                </p>
+              </div>
+            </div>
+
+            <!-- Шаг 2 -->
+            <div class="process-step">
+              <span class="step-number">02</span>
+              <div class="step-content">
+                <h3 class="step-title">Design & Development</h3>
+                <p class="step-desc">
+                  We turn your ideas into a premium website for your beauty
+                  business. We create the design, organize your services and
+                  content, and build a fast, mobile-friendly website
+                </p>
+              </div>
+            </div>
+
+            <!-- Шаг 3 -->
+            <div class="process-step">
+              <span class="step-number">03</span>
+              <div class="step-content">
+                <h3 class="step-title">Launch</h3>
+                <p class="step-desc">
+                  Once everything is ready, we launch your website and make sure
+                  your booking system, contact details and Google basics are in
+                  place. Your new website is ready to welcome visitors and turn
+                  them into enquiries and bookings
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Секция: Услуги (Слайдер) -->
+      <section class="services-slider-section" id="services">
+        <div class="container">
+          <div class="section-header services-header">
+            <div class="header-text">
+              <span class="section-subtitle">What We Do</span>
+              <h2 class="section-title">
+                Websites for Beauty & Wellness Businesses
+              </h2>
+              <p class="section-desc">
+                We design and build premium websites for beauty salons, spas,
+                aesthetic clinics, yoga studios and wellness businesses
+              </p>
+            </div>
+          </div>
+          <!-- Кнопки управления слайдером (Десктоп) -->
+          <div class="slider-controls">
+            <button class="slider-btn prev-btn" aria-label="Previous slide">
+              <!-- Длинная тонкая стрелка влево -->
+              <svg viewBox="0 0 60 16" width="60" height="16">
+                <path
+                  d="M60 8H2M9 1L2 8l7 7"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
+            <button class="slider-btn next-btn" aria-label="Next slide">
+              <!-- Длинная тонкая стрелка вправо -->
+              <svg viewBox="0 0 60 16" width="60" height="16">
+                <path
+                  d="M0 8h58M51 1l7 7-7 7"
+                  stroke="currentColor"
+                  stroke-width="1.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <!-- Контейнер слайдера -->
+        <div class="slider-container" id="servicesSlider">
+          <div class="slider-track">
+            <!-- Карточка 1 -->
+            <a href="salons.html" class="service-card">
+              <div class="card-image">
+                <img
+                  src="assets/img/services-1.webp"
+                  alt="Beauty Salon Websites"
+                />
+              </div>
+              <div class="card-content">
+                <h3>Beauty Salons</h3>
+                <p>
+                  Beautiful, easy-to-use websites that showcase your services,
+                  work and team — with simple booking and contact options
+                </p>
+                <span class="explore-link"
+                  >Explore
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    /></svg
+                ></span>
+              </div>
+            </a>
+
+            <!-- Карточка 2 -->
+            <a href="spa.html" class="service-card">
+              <div class="card-image">
+                <img src="assets/img/services-2.jpg" alt="Spa Websites" />
+              </div>
+              <div class="card-content">
+                <h3>Spas & Retreats</h3>
+                <p>
+                  Calm, elegant websites that show your treatments, prices and
+                  atmosphere, while making it easy for clients to book
+                </p>
+                <span class="explore-link"
+                  >Explore
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    /></svg
+                ></span>
+              </div>
+            </a>
+
+            <!-- Карточка 3 -->
+            <a href="clinics.html" class="service-card">
+              <div class="card-image">
+                <img src="assets/img/services-3.avif" alt="Aesthetic Clinics" />
+              </div>
+              <div class="card-content">
+                <h3>Aesthetic Clinics</h3>
+                <p>
+                  Professional websites that help patients understand your
+                  treatments, trust your expertise and book an appointment
+                </p>
+                <span class="explore-link"
+                  >Explore
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    /></svg
+                ></span>
+              </div>
+            </a>
+
+            <!-- Карточка 4 -->
+            <a href="yoga.html" class="service-card">
+              <div class="card-image">
+                <img src="assets/img/services-4.webp" alt="Yoga Studios" />
+              </div>
+              <div class="card-content">
+                <h3>Yoga Studios</h3>
+                <p>
+                  Modern websites for yoga studios with class schedules,
+                  membership options and an easy way to sign up
+                </p>
+                <span class="explore-link"
+                  >Explore
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    /></svg
+                ></span>
+              </div>
+            </a>
+
+            <!-- Карточка 5 -->
+            <a href="wellness.html" class="service-card">
+              <div class="card-image">
+                <img src="assets/img/services-5.jpg" alt="Wellness Studios" />
+              </div>
+              <div class="card-content">
+                <h3>Wellness Studios</h3>
+                <p>
+                  Beautiful, welcoming websites that present your services,
+                  introduce your team and make it easy for clients to get in
+                  touch
+                </p>
+                <span class="explore-link"
+                  >Explore
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    /></svg
+                ></span>
+              </div>
+            </a>
+
+            <!-- Карточка 6 (Наше предложение: SEO) -->
+            <a href="#contacts" class="service-card">
+              <div class="card-image">
+                <img src="assets/img/services-7.jpg" alt="Local SEO" />
+              </div>
+              <div class="card-content">
+                <h3>Local SEO</h3>
+                <p>
+                  Help potential clients find your business on Google with a
+                  properly set up Google Business Profile, local SEO basics and
+                  Schema Markup
+                </p>
+                <span class="explore-link"
+                  >Let's Discuss
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    /></svg
+                ></span>
+              </div>
+            </a>
+
+            <!-- Карточка 7 (Care After Launch) -->
+            <a href="#pricing" class="service-card">
+              <div class="card-image">
+                <img src="assets/img/services-8.jpg" alt="Care After Launch" />
+              </div>
+              <div class="card-content">
+                <h3>Care After Launch</h3>
+                <p>
+                  We can take care of the technical side after your website goes
+                  live — hosting, maintenance and ongoing support
+                </p>
+                <span class="explore-link"
+                  >View Packages
+                  <svg viewBox="0 0 24 24">
+                    <path
+                      d="M5 12h14M12 5l7 7-7 7"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      fill="none"
+                    /></svg
+                ></span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Секция: Тарифы (Pricing) -->
+      <section class="pricing-section" id="pricing">
+        <div class="container pricing-container">
+          <!-- Левая колонка: Информация -->
+          <div class="pricing-info">
+            <h2 class="pricing-title">Pricing <br />Section</h2>
+            <p class="pricing-desc">
+              Choose the package that fits your business
+            </p>
+            <span class="pricing-starting">from $799</span>
+
+            <div class="pricing-terms">
+              <p class="terms-highlight">How Payment Works</p>
+              <p class="terms-desc">
+                We split the payment into two parts, so you don't have to pay
+                for everything upfront
+              </p>
+
+              <ul class="payment-steps">
+                <li>
+                  <strong>30% deposit</strong> paid by Payoneer to reserve your
+                  project
+                </li>
+                <li>
+                  <strong>70% final payment</strong> paid before your new
+                  website goes live.
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Правая колонка: Карточки тарифов -->
+          <div class="pricing-cards">
+            <!-- Тариф 1: The Essential -->
+            <div class="pricing-card">
+              <div class="card-header">
+                <h3 class="card-name">The Essential</h3>
+                <span class="card-target"
+                  >For beauty professionals & small studios</span
+                >
+              </div>
+              <ul class="card-features">
+                <li>Beautiful one-page website</li>
+                <li>WordPress — easy to update</li>
+                <li>Online booking integration</li>
+                <li>Mobile-friendly design</li>
+                <li>Basic SEO setup</li>
+                <li>1 year hosting & domain</li>
+                <li>14 days support after launch</li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-price">$799</div>
+                <a href="#contacts" class="pricing-btn">Let's Discuss</a>
+              </div>
+            </div>
+
+            <!-- Тариф 2: The Signature (Акцент) -->
+            <div class="pricing-card signature-card">
+              <div class="popular-badge">Popular</div>
+
+              <div class="card-header">
+                <h3 class="card-name">The Signature</h3>
+                <span class="card-target"
+                  >For beauty salons, spas, studios</span
+                >
+              </div>
+
+              <ul class="card-features">
+                <li>Website with up to 6 pages</li>
+                <li>Bilingual (2 Languages)</li>
+                <li>Online Booking Integration</li>
+                <li>
+                  <strong>Google Business Profile & local SEO setup</strong>
+                </li>
+                <li>Custom animations & interactions</li>
+                <li>1 Year Hosting & Domain</li>
+                <li>1 month support after launch</li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-price">$1,299</div>
+                <a href="#contacts" class="pricing-btn pricing-btn-solid"
+                  >Let's Discuss</a
+                >
+              </div>
+            </div>
+
+            <!-- Тариф 3: The Elite -->
+            <div class="pricing-card">
+              <div class="card-header">
+                <h3 class="card-name">The Elite</h3>
+                <span class="card-target"
+                  >For established beauty & wellness businesses</span
+                >
+              </div>
+              <ul class="card-features">
+                <li>Up to 15 pages</li>
+                <li><strong>Bilingual (3 Languages)</strong></li>
+                <li>Detailed treatment & service pages</li>
+                <li>Online booking & enquiry forms</li>
+                <li>Analytics & Search Console</li>
+                <li>1 Year Hosting & Domain</li>
+                <li>2 Months "Care After Launch"</li>
+              </ul>
+              <div class="card-footer">
+                <div class="card-price">from $1,999</div>
+                <a href="#contacts" class="pricing-btn">Let's Discuss</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog-section" id="blog">
+        <div class="container">
+          <!-- Шапка блога с линией -->
+          <div class="blog-header">
+            <h2 class="blog-title-main">Journal & Trends</h2>
+            <!-- Ссылка на все статьи -->
+            <a href="allarticles.html" class="view-all-link"
+              >View All Articles</a
+            >
+          </div>
+          <hr class="blog-divider" />
+
+          <!-- Сетка статей -->
+          <div class="blog-grid">
+            <!-- Статья 1 -->
+            <article class="blog-card">
+              <a href="single.html" class="blog-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?q=80&w=800&auto=format&fit=crop"
+                  alt="Hair care"
+                />
+              </a>
+              <div class="blog-content">
+                <span class="blog-date">August 10, 2026</span>
+                <h3 class="blog-title">
+                  <a href="single.html"
+                    >How to Protect Your Hair and Skin in a Tropical Climate</a
+                  >
+                </h3>
+                <p class="blog-excerpt">
+                  Discover our top professional tips for maintaining glowing
+                  skin and healthy hair despite high humidity and sun exposure.
+                </p>
+                <!-- Кнопка читать далее -->
+                <a href="single.html" class="read-more">Read More</a>
+              </div>
+            </article>
+
+            <!-- Статья 2 -->
+            <article class="blog-card">
+              <a href="single.html" class="blog-image-wrapper">
+                <img
+                  src="https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=800&auto=format&fit=crop"
+                  alt="Spa rituals"
+                />
+              </a>
+              <div class="blog-content">
+                <span class="blog-date">August 02, 2026</span>
+                <h3 class="blog-title">
+                  <a href="single.html"
+                    >The Ultimate Guide to Premium Spa Rituals</a
+                  >
+                </h3>
+                <p class="blog-excerpt">
+                  Take a deep dive into the relaxing world of our signature spa
+                  treatments designed to restore both your body and mind.
+                </p>
+                <a href="single.html" class="read-more">Read More</a>
+              </div>
+            </article>
+
+            <!-- Статья 3 -->
+            <article class="blog-card">
+              <a href="single.html" class="blog-image-wrapper">
+                <img
+                  src="https://cdn.mos.cms.futurecdn.net/RvLieHqoS9JFCpLvknJKJN.jpg"
+                  alt="Minimalist manicure"
+                />
+              </a>
+              <div class="blog-content">
+                <span class="blog-date">July 28, 2026</span>
+                <h3 class="blog-title">
+                  <a href="single.html"
+                    >Minimalist Manicure: The Biggest Trend of the Year</a
+                  >
+                </h3>
+                <p class="blog-excerpt">
+                  Why less is more. Explore the elegant, clean aesthetics of the
+                  minimalist manicure that top influencers are choosing right
+                  now.
+                </p>
+                <a href="single.html" class="read-more">Read More</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <svg
+          class="process-branch__faq"
+          viewBox="0 0 250 300"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <!-- Шаблон листа -->
+            <g id="process-leaf">
+              <!-- Светлая половина -->
+              <path
+                d="M 0,0 C 25,-20 60,-10 85,0 C 60,-3 25,3 0,0 Z"
+                fill="#C5D3B5"
+              />
+              <!-- Темная половина -->
+              <path
+                d="M 0,0 C 25,20 60,10 85,0 C 60,3 25,-3 0,0 Z"
+                fill="#9CAE88"
+              />
+              <!-- Прожилка -->
+              <path
+                d="M 0,0 Q 35,0 75,0"
+                stroke="#778A64"
+                stroke-width="1"
+                fill="none"
+              />
+            </g>
+          </defs>
+
+          <!-- Акварельное фоновое пятно -->
+          <path
+            d="M -50,150 C 50,80 150,150 120,300 C -20,350 -100,250 -50,150 Z"
+            fill="#F5F3EA"
+            opacity="0.8"
+          />
+          <path
+            d="M -20,200 C 60,180 100,250 50,320 C -40,320 -60,250 -20,200 Z"
+            fill="#EAE5D9"
+            opacity="0.6"
+          />
+
+          <!-- Стебель (растет из левого нижнего угла вверх и вправо) -->
+          <path
+            d="M -10,310 Q 80,200 160,80"
+            stroke="#778A64"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"
+          />
+
+          <!-- Листья -->
+          <!-- Нижние -->
+          <use
+            href="#process-leaf"
+            transform="translate(40, 240) rotate(10) scale(0.95)"
+          />
+          <use
+            href="#process-leaf"
+            transform="translate(50, 230) rotate(-75) scale(0.9)"
+          />
+
+          <!-- Средние (как на картинке) -->
+          <use
+            href="#process-leaf"
+            transform="translate(100, 155) rotate(-5) scale(0.9)"
+          />
+          <use
+            href="#process-leaf"
+            transform="translate(110, 145) rotate(-85) scale(0.85)"
+          />
+
+          <!-- Самый верхний кончик -->
+          <use
+            href="#process-leaf"
+            transform="translate(160, 80) rotate(-50) scale(0.75)"
+          />
+        </svg>
+        <div class="container faq-container">
+          <!-- Заголовок секции -->
+          <div class="faq-header">
+            <h2 class="faq-title">Frequently Asked Questions</h2>
+            <span class="faq-description">The Details</span>
+            <p class="faq-subtitle">
+              Everything you need to know about the process, pricing, and what
+              to expect
+            </p>
+          </div>
+
+          <!-- Аккордеон с вопросами -->
+          <div class="faq-accordion">
+            <!-- Вопрос 1 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Will my website have an online booking feature?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Yes, we offer tailored booking solutions based on how your
+                  salon operates. We can build a custom booking request form
+                  (clients select their preferred date and time for your admin
+                  to confirm), or integrate a fully automated booking system
+                  directly into your site. We also connect instant messengers
+                  (WhatsApp, Telegram, Live Chat) to make booking as easy as a
+                  single click.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 2 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Will I be able to update prices or services myself?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Yes! We build your site on WordPress with a custom,
+                  user-friendly dashboard designed specifically for your
+                  business. We also provide a personalized video tutorial so you
+                  or your administrator can make updates in minutes—no coding
+                  skills required.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 3 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Do I need to have all texts and photos ready before we start?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Not at all. To create SEO-optimized, high-converting content
+                  for your website, I only need a few basics: a list of your
+                  services, working hours, your unique strengths, and any
+                  specific details you’d like to highlight. I'll handle the
+                  professional copywriting. As for images, if you have
+                  professional photos — great! If not, we will curate premium
+                  stock imagery that perfectly matches your brand's aesthetic.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 4 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Are there any hidden fees or ongoing monthly costs?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Transparency is our priority. Our website packages are a
+                  one-time investment. The only standard ongoing costs are your
+                  domain and hosting (which we cover for your first year!). We
+                  don't lock you into rigid maintenance contracts. If you ever
+                  prefer us to handle future technical updates or support, we
+                  are always happy to discuss a custom arrangement for a
+                  reasonable fee on an individual basis.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 5 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                How long does the website development process usually take?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  A premium Landing Page typically takes 3-4 weeks, while a
+                  multi-page Signature or Elite website takes 4-6 weeks. The
+                  exact timeline depends on the project's complexity and how
+                  quickly you can provide feedback during the development
+                  phases.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 6 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                Will my new website show up on Google when people search?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  Yes. Every website we build includes basic SEO to help Google
+                  understand your website and show your pages in search results.
+                  We also connect your website to your Google Business Profile,
+                  so your business can appear in local searches and on Google
+                  Maps. Getting higher in Google takes time, but we make sure
+                  your website starts with the right SEO setup.
+                </div>
+              </div>
+            </div>
+
+            <!-- Вопрос 7 -->
+            <div class="faq-item">
+              <button class="faq-question">
+                How does the payment process work?
+                <span class="faq-icon"></span>
+              </button>
+              <div class="faq-answer">
+                <div class="faq-answer-inner">
+                  We split the project into two comfortable installments. A 30%
+                  deposit via Payoneer secures your booking in our calendar and
+                  starts the design phase. The remaining 70% is only due when
+                  you are completely thrilled with the final result, right
+                  before your new website goes live.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Призыв к действию под FAQ -->
+        <div class="faq-cta-wrapper">
+          <span class="faq-cta-text">Still have questions?</span>
+          <a
+            href="https://wa.me/380661207056"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="faq-cta-link"
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.888-.788-1.487-1.761-1.66-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"
+              />
+            </svg>
+            Let's chat on WhatsApp
+          </a>
+        </div>
+      </section>
+
+      <section class="plugin-reviews-section" id="reviews">
+        <div class="container">
+          <div class="testimonials-header">
+            <h2 class="testimonials-title">What Our Clients Say</h2>
+            <span class="testimonials-description"
+              >Real experiences from real clients</span
+            >
+            <p class="testimonials-subtitle">
+              See what our clients say about working with us and their new
+              websites
+            </p>
+          </div>
+
+          <!-- ОБЕРТКА ДЛЯ ПЛАГИНА (Сюда пойдет шорткод) -->
+          <div class="reviews-plugin-wrapper">
+            <!-- Пример шорткода: [trustindex no-registration=google] -->
+            <p style="text-align: center; color: #999; font-style: italic">
+              Здесь будет выводиться плагин WordPress
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="final-cta" id="contacts">
+        <svg
+          class="process-branch process-branch__reviews"
+          viewBox="0 0 250 300"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <!-- Шаблон листа -->
+            <g id="process-leaf">
+              <!-- Светлая половина -->
+              <path
+                d="M 0,0 C 25,-20 60,-10 85,0 C 60,-3 25,3 0,0 Z"
+                fill="#C5D3B5"
+              ></path>
+              <!-- Темная половина -->
+              <path
+                d="M 0,0 C 25,20 60,10 85,0 C 60,3 25,-3 0,0 Z"
+                fill="#9CAE88"
+              ></path>
+              <!-- Прожилка -->
+              <path
+                d="M 0,0 Q 35,0 75,0"
+                stroke="#778A64"
+                stroke-width="1"
+                fill="none"
+              ></path>
+            </g>
+          </defs>
+
+          <!-- Акварельное фоновое пятно -->
+          <path
+            d="M -50,150 C 50,80 150,150 120,300 C -20,350 -100,250 -50,150 Z"
+            fill="#F5F3EA"
+            opacity="0.8"
+          ></path>
+          <path
+            d="M -20,200 C 60,180 100,250 50,320 C -40,320 -60,250 -20,200 Z"
+            fill="#EAE5D9"
+            opacity="0.6"
+          ></path>
+
+          <!-- Стебель (растет из левого нижнего угла вверх и вправо) -->
+          <path
+            d="M -10,310 Q 80,200 160,80"
+            stroke="#778A64"
+            stroke-width="1.5"
+            fill="none"
+            stroke-linecap="round"
+          ></path>
+
+          <!-- Листья -->
+          <!-- Нижние -->
+          <use
+            href="#process-leaf"
+            transform="translate(40, 240) rotate(10) scale(0.95)"
+          ></use>
+          <use
+            href="#process-leaf"
+            transform="translate(50, 230) rotate(-75) scale(0.9)"
+          ></use>
+
+          <!-- Средние (как на картинке) -->
+          <use
+            href="#process-leaf"
+            transform="translate(100, 155) rotate(-5) scale(0.9)"
+          ></use>
+          <use
+            href="#process-leaf"
+            transform="translate(110, 145) rotate(-85) scale(0.85)"
+          ></use>
+
+          <!-- Самый верхний кончик -->
+          <use
+            href="#process-leaf"
+            transform="translate(160, 80) rotate(-50) scale(0.75)"
+          ></use>
+        </svg>
+        <div class="container cta-container">
+          <!-- Левая колонка: Текст и мессенджеры -->
+          <div class="cta-content">
+            <!-- Вращающийся бейдж -->
+            <div class="designer-badge">
+              <svg viewBox="0 0 100 100" width="100" height="100">
+                <path
+                  id="circlePath"
+                  d="M 50, 50 m -35, 0 a 35,35 0 1,1 70,0 a 35,35 0 1,1 -70,0"
+                  fill="none"
+                />
+                <text>
+                  <textPath href="#circlePath" startOffset="0%">
+                    • SITE WITH SOUL • WEB ST
+                  </textPath>
+                </text>
+              </svg>
+            </div>
+            <h2 class="cta-title">Let’s Build Your New Website</h2>
+            <span class="cta-subtitle"
+              >Have a beauty or wellness business and need a website?</span
+            >
+            <p class="cta-description">
+              Tell us a little about your business, and let’s talk about what
+              your new website could look like
+              <br /><br />
+              <em
+                ><span class="globe-emoji">🌍 </span>We work with beauty and
+                wellness businesses around the world. Fill out the form below or
+                contact us directly</em
+              >
+            </p>
+
+            <div class="cta-contacts">
+              <span class="contacts-label">Connect instantly:</span>
+              <div class="messenger-links">
+                <a href="https://wa.me/+380661207056" class="messenger-link"
+                  >WhatsApp</a
+                >
+                <a href="https://t.me/sitewithsoul" class="messenger-link"
+                  >Telegram</a
+                >
+                <a
+                  href="viber://chat?number=+380661207056"
+                  class="messenger-link"
+                  >Viber</a
+                >
+              </div>
+
+              <span class="contacts-label">Or drop an email:</span>
+              <a href="mailto:hello@sitewithsoul.com" class="email-link"
+                >sitewithsoul@gmail.com</a
+              >
+            </div>
+          </div>
+
+          <!-- Правая колонка: Журнальная форма -->
+          <div class="cta-form-wrapper">
+            <form class="editorial-form" id="userNameFooter">
+              <div class="input-group">
+                <input
+                  type="text"
+                  id="userName"
+                  name="name"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="input-group">
+                <input
+                  type="tel"
+                  id="userTel"
+                  name="tel"
+                  placeholder="WhatsApp Number"
+                  required
+                />
+              </div>
+
+              <div class="input-group">
+                <select id="userService" name="service" required>
+                  <option value="" disabled selected>
+                    What are you looking for?
+                  </option>
+                  <option value="landing">A simple one-page website</option>
+                  <option value="signature">
+                    A full website with multiple pages
+                  </option>
+                  <option value="elite">
+                    A larger website with more features
+                  </option>
+                  <option value="other">I’m not sure — I need advice</option>
+                </select>
+              </div>
+
+              <div class="input-group">
+                <textarea
+                  id="userMessage"
+                  name="message"
+                  rows="3"
+                  placeholder="Tell me a bit about your project..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-cta">Send Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- =========================================
+         СЕКЦИЯ: FOOTER (ПОДВАЛ САЙТА)
+         ========================================= -->
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <!-- Колонка 1: Бренд и Соцсети -->
+        <div class="footer-col brand-col">
+          <!-- Твой логотип (текстом или картинкой) -->
+          <a href="#" class="footer-logo">SiteWithSoul</a>
+          <p class="footer-desc">
+            Premium websites for beauty & wellness businesses worldwide
+          </p>
+
+          <!-- Соцсети -->
+          <div class="social-links">
+            <a
+              href="https://www.instagram.com/berzina_web_dev/"
+              target="_blank"
+              aria-label="Instagram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/olena-berzina-284233257/"
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+            <a
+              href="https://t.me/sitewithsoul"
+              target="_blank"
+              aria-label="Telegram"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </a>
+            <a
+              href="https://wa.me/+380661207056"
+              target="_blank"
+              aria-label="WhatsApp"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="viber://chat?number=+380661207056"
+              target="_blank"
+              aria-label="Viber"
+            >
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                ></path>
+                <path d="M15 7a4 4 0 0 1 4 4"></path>
+                <path d="M15 3a8 8 0 0 1 8 8"></path>
+              </svg>
+            </a>
+          </div>
+          <!-- ========================================== -->
+          <!-- БЛОК ЛИД-МАГНИТА В ФУТЕР                   -->
+          <!-- ========================================== -->
+          <div class="footer-lead-magnet">
+            <p class="lead-text">
+              Not ready for a new website yet?<br />
+              Get our free guide
+              <em>How to Get Your Beauty Business Found on Google</em>
+            </p>
+            <button class="btn btn-primary open-lead-modal">
+              Get the Free Checklist
+            </button>
+          </div>
+        </div>
+
+        <!-- Колонка 2: Экспертиза (Страницы) -->
+        <div class="footer-col links-col">
+          <h4 class="footer-heading">What We Create</h4>
+          <ul class="footer-menu">
+            <li><a href="#portfolio">One-Page Websites</a></li>
+            <li><a href="#portfolio">Multi-Page Websites</a></li>
+            <li><a href="#portfolio">Booking & Business Websites</a></li>
+            <li><a href="#portfolio">Website Support & Maintenance</a></li>
+          </ul>
+        </div>
+        <!-- Колонка 3: НОВЫЙ БЛОК (Ниши) -->
+        <div class="footer-col links-col">
+          <h4 class="footer-heading">Websites For</h4>
+          <ul class="footer-menu">
+            <li><a href="salons.html">Beauty Salons</a></li>
+            <li><a href="spa.html">Spas</a></li>
+            <li><a href="clinics.html">Aesthetic Clinics</a></li>
+            <li><a href="yoga.html">Yoga Studios</a></li>
+            <li><a href="wellness.html">Wellness Studios</a></li>
+            <li><a href="#contacts">Beauty Professionals</a></li>
+            <li><a href="partnership.html">Partnership</a></li>
+          </ul>
+        </div>
+
+        <!-- Колонка 3: Контакты и Оплата -->
+        <div class="footer-col contact-col">
+          <h4 class="footer-heading">Let's Connect</h4>
+
+          <a href="mailto:sitewithsoul@gmail.com" class="footer-contact-link">
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              ></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            sitewithsoul@gmail.com
+          </a>
+
+          <a
+            href="https://wa.me/380661207056"
+            target="_blank"
+            class="footer-contact-link"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              width="18"
+              height="18"
+              stroke="currentColor"
+              stroke-width="2"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              ></path>
+            </svg>
+            +38 066 120 70 56
+            <span class="contact-note">(WhatsApp / Telegram)</span>
+          </a>
+
+          <div class="payment-methods">
+            <span class="payment-label">Global Payments Accepted:</span>
+            <div class="payment-icons">
+              <!-- Здесь можно вставить SVG логотипа Payoneer, пока пишем текстом для стиля -->
+              <span class="pay-badge">Payoneer</span>
+              <span class="pay-badge">SWIFT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Кнопка наверх -->
+      <button class="scroll-to-top" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" width="20" height="20">
+          <path
+            d="M12 19V5m0 0l-6 6m6-6l6 6"
+            stroke="currentColor"
+            stroke-width="1.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            fill="none"
+          />
+        </svg>
+      </button>
+      <!-- Самая нижняя полоса: Копирайт и Документы -->
+      <div class="footer-bottom">
+        <div class="container bottom-container">
+          <p class="copyright">
+            © <span id="currentYear">2026</span> SiteWithSoul Studio
+          </p>
+          <div class="legal-links">
+            <a href="offer.html">Public Offer Contract</a>
+            <a href="policy.html">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО ЛИД МАГНИТ      -->
+
+    <div class="lead-modal-overlay" id="leadModal">
+      <div class="lead-modal-box">
+        <button class="close-modal-lead" aria-label="Close modal">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path
+              d="M18 6L6 18M6 6l12 12"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+
+        <div class="modal-lid-content">
+          <h3>Boost Your Local SEO</h3>
+          <p>
+            Enter your details below, and we'll send the free checklist directly
+            to your inbox.
+          </p>
+
+          <!-- Форма готова для подключения EmailJS -->
+          <form id="lead-form" class="lead-form">
+            <div class="input-group-lead">
+              <label for="lead_name">Your Name</label>
+              <input
+                type="text"
+                id="lead_name"
+                name="user_name"
+                placeholder="e.g. Sarah Smith"
+                required
+              />
+            </div>
+
+            <div class="input-group-lead">
+              <label for="lead_email">Email Address</label>
+              <input
+                type="email"
+                id="lead_email"
+                name="user_email"
+                placeholder="hello@yoursalon.com"
+                required
+              />
+            </div>
+
+            <button type="submit" class="btn-primary submit-lead">
+              Send Me the Checklist
+            </button>
+          </form>
+          <p class="privacy-note">We respect your privacy. No spam, ever.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal-overlay" id="userNameModal">
+      <div class="modal-content">
+        <button class="close-btn" id="closeModal">&times;</button>
+        <h3>Start Your Project</h3>
+        <form action="#" method="POST" id="contactForm">
+          <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required />
+          </div>
+          <div class="form-group">
+            <input
+              type="tel"
+              name="tel"
+              placeholder="WhatsApp Number"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <select name="business_type" required>
+              <option value="" disabled selected>Select Business Type</option>
+              <option value="salon">Beauty Salon</option>
+              <option value="spa">Spa / Wellness Studio</option>
+              <option value="clinic">Aesthetic Clinic</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary submit-btn">
+            Send Request
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M5 12h14M12 5l7 7-7 7"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                fill="none"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Вертикальный блок социальных сетей -->
+    <div class="floating-socials">
+      <a
+        href="https://www.instagram.com/berzina_web_dev/"
+        aria-label="Instagram"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+          <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+          <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+        </svg>
+      </a>
+      <a href="https://t.me/sitewithsoul" aria-label="Telegram">
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <line x1="22" y1="2" x2="11" y2="13"></line>
+          <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+        </svg>
+      </a>
+      <a
+        href="https://www.linkedin.com/in/olena-berzina-284233257/"
+        aria-label="LinkedIn"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path
+            d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"
+          ></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+    </div>
+
+    <!-- Плавающая кнопка WhatsApp -->
+    <a
+      href="https://wa.me/https://wa.me/+380661207056"
+      class="floating-whatsapp"
+      target="_blank"
+      aria-label="Chat on WhatsApp"
+    >
+      <img src="assets/img/whatsapp-svgrepo-com.svg" alt="WhatsApp" />
+    </a>
+    <!-- 1. Библиотека GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- 2. Плагин ScrollTrigger для анимаций по скроллу -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("0c25m2rG_FSWyuuzC");
+      })();
+    </script>
+  </body>
+</html>
